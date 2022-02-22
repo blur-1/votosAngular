@@ -1,0 +1,21 @@
+
+<div  class="col">
+    <div class="card border-primary mb-3" style="max-width: 18rem;">
+        <div class="card-header bg-primary border-primary text-center">
+            <a href="{{datosInput.link}}" target="_blank">   
+                <h2 class="card-title">{{datosInput.title}}</h2>
+            </a>
+        </div>
+        <div class="card-body text-center">
+           <small>votos:</small>
+            <h1 class="card-text"> {{datosInput.votes}}</h1>
+        </div>
+        <div class="card-footer  border-primary text-center">Seleccione: 
+            <button (click)="datosInput.aumentarVotos()" class="btn btn-primary">+</button> &nbsp;
+            <button (click)="datosInput.reducirVotos()" class="btn btn-danger">-</button>
+        </div>
+
+    </div>
+</div>
+
+
